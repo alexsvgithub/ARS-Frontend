@@ -1,9 +1,15 @@
-/* #foot {
-    position:absolute;
-    bottom: 0px;
-    display: inline-block;
 
-  }
-   */
+
   /* Other Classes for Page Styling */
+  footer{
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    color:white;
+    text-align: center;
+    /* Height of the footer*/ 
+    height: 45px;
+    background: black;
+  }
   
