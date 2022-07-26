@@ -1,1 +1,52 @@
-<p>add-class works!</p>
+
+
+<!-- Contact Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="text-center mb-3 pb-3">
+            
+            <h1>ADD CLASS</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="contact-form bg-white" style="padding: 30px;">
+                    <div id="success"></div>
+                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <div class="form-row">
+                            <div class="control-group col-sm-12">
+                                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Class Name</h6>
+                                <input type="text" class="form-control p-2" id="name" placeholder="Class"
+                                    required="required" data-validation-required-message="Invalid Number!" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group col-sm-12">
+                                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Flight Id</h6>
+                                <input type="number" class="form-control p-2" id="email" placeholder="Fid"
+                                    required="required" data-validation-required-message="Invalid Number of Passengers!" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="control-group col-sm-12">
+                            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Available Seats</h6>
+                            <input type="number" class="form-control p-2" id="subject" placeholder="seats"
+                                required="required" data-validation-required-message="Invalid Amount!" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group col-sm-12">
+                            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Charges</h6>
+                            <input type="number" class="form-control p-2" id="subject" placeholder="cost"
+                                required="required" data-validation-required-message="Invalid Amount!" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        
+                        
+                        <div class="text-center">
+                            <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Add Flight</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
