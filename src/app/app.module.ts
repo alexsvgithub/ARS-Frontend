@@ -12,6 +12,7 @@ import { AddFlightComponent } from './add-flight/add-flight.component';
 import { AddRouteComponent } from './add-route/add-route.component';
 import { ShowBookedFlightComponent } from './show-booked-flight/show-booked-flight.component';
 import { ShowAllFlightsComponent } from './show-all-flights/show-all-flights.component';
+import { AddClassComponent } from './add-class/add-class.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ShowAllFlightsComponent } from './show-all-flights/show-all-flights.com
     AddFlightComponent,
     AddRouteComponent,
     ShowBookedFlightComponent,
-    ShowAllFlightsComponent
+    ShowAllFlightsComponent,
+    AddClassComponent
   ],
   imports: [
     BrowserModule,
