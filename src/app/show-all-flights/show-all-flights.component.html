@@ -1,3 +1,7 @@
+
+
+
+
 <br>
 <table class="table table-hover">
     <thead>
@@ -13,37 +17,18 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-
+      <tr *ngFor="let item of data">
+        
+        <td>{{item.index}}</td>
+        <td>{{item.aeroplane}}</td>
+        <td>{{item.origin}}</td>
+        <td>{{item.destination}}</td>
+        <td>{{item.fdate}}</td>
+        <td>{{item.departure}}</td>
+        <td>{{item.arrival}}</td>
+        <td>{{item.avaliableSeats}}</td>
         
       </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>@mdo</td>
-      </tr>
+     
     </tbody>
   </table>

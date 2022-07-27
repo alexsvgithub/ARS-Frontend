@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ARSServiceService } from '../ars-service.service';
+import { AppComponent } from '../app.component';
+import { JsonPipe } from '@angular/common';
+
 
 @Component({
   selector: 'app-show-all-flights',
@@ -7,9 +11,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowAllFlightsComponent implements OnInit {
 
-  constructor() { }
-
+// data:Json = {};
+ data = [];
+  index:number = 1;
+  constructor(public myapp: AppComponent) { 
+    this.data=this.myapp.getData();
+  }
+  
   ngOnInit(): void {
   }
+//   getData() {
+//     //access service function
+//     // this.data=this.myapp.getData();
+// }
+  
 
 }

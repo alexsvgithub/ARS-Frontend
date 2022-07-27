@@ -14,6 +14,10 @@ import { ShowBookedFlightComponent } from './show-booked-flight/show-booked-flig
 import { ShowAllFlightsComponent } from './show-all-flights/show-all-flights.component';
 import { AddClassComponent } from './add-class/add-class.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { ARSServiceService } from './ars-service.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,12 +31,19 @@ import { AddClassComponent } from './add-class/add-class.component';
     ShowBookedFlightComponent,
     ShowAllFlightsComponent,
     AddClassComponent
+   
+  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ARSServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+// https://localhost:44342/api/flight/show
